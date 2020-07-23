@@ -57,7 +57,7 @@ h2, h3, label, button {
   background-size: cover;
 }
 
-.welcome h1, .aboutme h1, .contact h1 {  
+#header-box h1 {  
   text-transform: uppercase;
   font-size: 20px;
   position: relative;
@@ -74,6 +74,40 @@ h2, h3, label, button {
   height: 60px;
   background: white;
   z-index: 1;
+}
+
+/* portfolio.html specifiers */
+
+.add-margin {
+  margin-top: 210px;
+}
+.carousel-text {
+  float: left;
+}
+.carousel-inner img {
+  height: 50%;
+  width: 50%;
+  float: right;
+}
+
+.carousel-indicators {
+  position: relative;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+a img {
+  opacity: 1;
+  transition: .4s ease;
+}
+
+a:hover img {
+  opacity: 0.7;
+  transition: .3s ease;
 }
 
 /* contact.html specifiers */
@@ -95,10 +129,12 @@ textarea {
 
 .btn-light {
   background: #d7e5e8;
+  transition: 0.4s ease;
 }
 
 .btn-light:hover {
   background: white;
+  transition: 0.3 ease;
 }
 
 /* aboutme.html specifiers */
@@ -222,4 +258,13 @@ padding-left:90px;
   bottom: 0;
   width: 100%;
   background-color: white;
+}
+
+footer i {
+  transition: 0.4s ease;
+}
+
+footer i:hover {
+  color: #c0d3d9;
+  transition: 0.3s ease;
 }
