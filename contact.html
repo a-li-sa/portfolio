@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -20,12 +19,11 @@
     <!-- font awesome -->
 
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-    crossorigin="anonymous"
-    >
-
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
 
     <!-- link to style.css -->
     <link rel="stylesheet" href="Assets/style.css" />
@@ -52,21 +50,28 @@
         </div>
       </div>
     </nav>
-    
+
     <header class="contact container-fluid">
       <div id="header-box" class="text-center rounded-pill">
-        <h1>keep in touch</h1>
+        <h1>get in touch</h1>
       </div>
     </header>
 
     <div class="container p-3 text-center">
       <h2>Would you like to connect with me?</h2>
-      <hr>
+      <hr />
     </div>
 
     <!-- Start Contact Form -->
     <main class="container">
-      <form action="/contactform.php" method="post" target="_blank" class="contact-form needs-validation" novalidate>
+      <form
+      action="mailto:alisa.poon97@gmail.com?subject=My Message"
+        method="POST"
+        target="_blank"
+        enctype="text/plain"
+        class="contact-form needs-validation"
+        novalidate
+      >
         <!-- Name -->
         <div class="form-group">
           <label for="name">Name:</label>
@@ -95,19 +100,24 @@
         </div>
         <!-- Message text area -->
         <div class="form-group">
-          <label for="comment">Message:</label>
+          <label for="message">Message:</label>
           <textarea
             class="form-control"
             rows="5"
             placeholder="enter message"
-            name="comment"
+            name="message"
             required
           ></textarea>
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
         <div class="text-center">
-          <button type="submit" class="before-footer btn btn-light rounded-pill">SUBMIT</button>
+          <button
+            type="submit"
+            class="before-footer btn btn-light rounded-pill"
+          >
+            SUBMIT
+          </button>
         </div>
       </form>
     </main>
