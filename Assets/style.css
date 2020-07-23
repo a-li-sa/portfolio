@@ -13,7 +13,7 @@ p {
   letter-spacing: 0.1rem;
 }
 
-h2, h3 {
+h2, h3, label, button {
   font-size: 20px;
   position: relative;
   letter-spacing: 0.1rem;
@@ -57,7 +57,7 @@ h2, h3 {
   background-size: cover;
 }
 
-.welcome h1, .aboutme h1 {  
+.welcome h1, .aboutme h1, .contact h1 {  
   text-transform: uppercase;
   font-size: 20px;
   position: relative;
@@ -76,10 +76,35 @@ h2, h3 {
   z-index: 1;
 }
 
+/* contact.html specifiers */
+
+.contact {
+  background: url(https://i.imgur.com/mWeunP2.png), linear-gradient(#d7e5e8, #c0d3d9);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input,
+textarea {
+  font-weight: 500;
+  letter-spacing: 0.12rem;
+  font-size: 12px;
+}
+
+.btn-light {
+  background: #d7e5e8;
+}
+
+.btn-light:hover {
+  background: white;
+}
+
 /* aboutme.html specifiers */
 
 .aboutme {
-  background: url(https://i.imgur.com/mWeunP2.png), linear-gradient(#d7e5e8, #c0d3d9);
+  background: url(https://i.imgur.com/vArjVlO.png), linear-gradient(#d7e5e8, #c0d3d9);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,7 +210,7 @@ padding-left:90px;
 /* footer */
 
 .before-footer {
-  margin-bottom: 110px;
+  margin-bottom: 120px;
 }
 
 .socials {
