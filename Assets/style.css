@@ -81,9 +81,11 @@ h2, h3, label, button {
 .add-margin {
   margin-top: 210px;
 }
+
 .carousel-text {
   float: left;
 }
+
 .carousel-inner img {
   height: 50%;
   width: 50%;
