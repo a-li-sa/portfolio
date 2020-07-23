@@ -147,11 +147,13 @@ textarea {
   background-size: cover;
 }
 
+/* timeline vertical line */
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
 }
+
 .timeline:before {
   top: 40px;
   bottom: 40px;
@@ -160,60 +162,16 @@ textarea {
   width: 3px;
   background-color: #c0d3d9;
   left: 50%;
-  margin-left: -1.5px;
+  margin-left: -3px;
 }
-.timeline > li {
+
+/* line up circles to the panels */
+.timeline li {
   margin-bottom: 20px;
   position: relative;
 }
 
-.timeline > li:before,
-.timeline > li:after {
-  content: " ";
-  display: table;
-}
-.timeline > li:after {
-  clear: both;
-}
-.timeline > li > .timeline-panel {
-  width: 50%;
-  float: left;
-  border: 1px solid #c0d3d9;
-  border-radius: 2px;
-  padding: 20px;
-  position: relative;
-}
-
-.timeline > li:not(.timeline-inverted) {
-padding-right:90px;
-}
-
-.timeline > li.timeline-inverted {
-padding-left:90px;
-}
-.timeline > li > .timeline-panel:before {
-  position: absolute;
-  top: 26px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #c0d3d9;
-  border-right: 0 solid #c0d3d9;
-  border-bottom: 15px solid transparent;
-  content: " ";
-}
-.timeline > li > .timeline-panel:after {
-  position: absolute;
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
-}
-.timeline > li > .timeline-badge {
+.timeline li .timeline-badge {
   color: #fff;
   width: 50px;
   height: 50px;
@@ -227,16 +185,74 @@ padding-left:90px;
   background-color: #c0d3d9;
   border-radius: 50%;
 }
-.timeline > li.timeline-inverted > .timeline-panel {
+
+/* spacing between panels */
+.timeline li:before,
+.timeline li:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* panel styling */
+.timeline li .timeline-panel {
+  width: 50%;
+  float: left;
+  border: 1px solid #c0d3d9;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+/* left column padding from line */
+.timeline li:not(.timeline-inverted) {
+padding-right:90px;
+}
+
+/* right column padding from line */
+.timeline li.timeline-inverted {
+padding-left:90px;
+}
+
+/* right column */
+.timeline li.timeline-inverted .timeline-panel {
   float: right;
 }
-.timeline > li.timeline-inverted > .timeline-panel:before {
+
+/* triangle arrows on panel (blue border) */
+.timeline li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #c0d3d9;
+  border-right: 0 solid #c0d3d9;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+/* triangle arrows on panel (white triangle)*/
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+/* flips the triangles to the left side on the right column panels */
+.timeline li.timeline-inverted .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
   right: auto;
 }
-.timeline > li.timeline-inverted > .timeline-panel:after {
+
+.timeline li.timeline-inverted .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;
@@ -246,7 +262,7 @@ padding-left:90px;
 /* footer */
 
 .before-footer {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 .socials {
