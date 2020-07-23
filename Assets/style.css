@@ -268,7 +268,7 @@ padding-left:90px;
 }
 
 .socials {
-  padding-top: 10px;
+  padding-top: 16px;
   text-align: center;
   z-index: 15;
   position: fixed;
@@ -280,6 +280,7 @@ padding-left:90px;
 
 footer i {
   transition: 0.4s ease;
+  font-size: 20px;
 }
 
 footer i:hover {
