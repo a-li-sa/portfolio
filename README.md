@@ -55,8 +55,8 @@ Desktop and mobile views are available.
 
 ([Landing](https://a-li-sa.github.io/portfolio/index.html) page, then the [Contact](https://a-li-sa.github.io/portfolio/contact.html) page)
 <p float="left">
-  <img src="https://i.imgur.com/aRqvt6g.gif" width=""/> 
-  <img src="https://i.imgur.com/dt4lxiT.gif" width=""/>
+  <img src="https://i.imgur.com/aRqvt6g.gif"/> 
+  <img src="Assets/portfolio3.gif"/>
 </p>
 
 Click on the arrows or the carousel indicators to view the portfolio items on the [Portfolio](https://a-li-sa.github.io/portfolio/portfolio.html) page.
