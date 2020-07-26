@@ -67,7 +67,8 @@ Click on the arrows or the carousel indicators to view the portfolio items on th
 
 ## Project Status 
 
-The portfolio page will be updated regularly to include new projects.
+* The Portfolio page will be updated regularly to include new projects.
+* The About Me page may be updated to provide more descriptive body texts in the panels.
 
 <a name="built-with"></a>
 
@@ -75,9 +76,9 @@ The portfolio page will be updated regularly to include new projects.
 
 * [HTML](https://html.spec.whatwg.org/) - Markup language used to define the structure of webpage. Semantic HTML elements were introduced in HTML5. 
 * [CSS](https://www.w3.org/Style/CSS/) - Style sheet language used to add style to markup languages like HTML. 
-* [Bootstrap](https://getbootstrap.com/) - A popular CSS framework that develops responsive and mobile-first websites. Used in this project to create the navbar, carousel, fixed footer, buttons, and responsive grid system
+* [Bootstrap](https://getbootstrap.com/) - A popular CSS framework that develops responsive and mobile-first websites. Used in this project to create the navbar, carousel, fixed footer, buttons, and responsive grid system.
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming language that creates dynamic website content. Used in this project to [hide navbar on scroll down](https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp).
-* [FontAwesome](https://fontawesome.com/) - Library for icons and fonts. Used in this project for the icons on the footer and carousel
+* [FontAwesome](https://fontawesome.com/) - Library for icons and fonts. Used in this project for the icons on the footer and carousel.
 
 ## Credits
 

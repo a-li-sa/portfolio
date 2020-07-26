@@ -1,230 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- font awesome -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-      crossorigin="anonymous"
-    />
+  <!-- font awesome -->
 
-    <!-- link to style.css -->
-    <link rel="stylesheet" href="Assets/style.css" />
-    <style>
-      body {
-        background: linear-gradient(#d7e5e8, #c0d3d9);
-        min-height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-bottom: 0;
-      }
-    </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
 
-    <title>Portfolio</title>
-  </head>
+  <!-- link to style.css -->
+  <link rel="stylesheet" href="Assets/style.css" />
+  <style>
+    body {
+      background: linear-gradient(#d7e5e8, #c0d3d9);
+      min-height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 0;
+    }
+  </style>
 
-  <body data-target="navbarResponsive">
-    <nav class="navbar navbar-expand-md navbar-light float-left" id="navbar">
-      <a class="navbar-brand" href="index.html">Alisa Poon</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#collapsibleNavbar"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse float-right" id="collapsibleNavbar">
-        <div class="navbar-nav ml-auto float-right">
-          <a class="nav-item nav-link active" href="#">Portfolio</a>
-          <a class="nav-item nav-link" href="aboutme.html">About Me</a>
-          <a class="nav-item nav-link" href="contact.html">Contact</a>
-        </div>
+  <title>Portfolio</title>
+</head>
+
+<body data-target="navbarResponsive">
+  <!-- start navbar -->
+  <nav class="navbar navbar-expand-md navbar-light float-left" id="navbar">
+    <a class="navbar-brand" href="index.html">Alisa Poon</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- navigation links -->
+    <div class="collapse navbar-collapse float-right" id="collapsibleNavbar">
+      <div class="navbar-nav ml-auto float-right">
+        <a class="nav-item nav-link active" href="#">Portfolio</a>
+        <a class="nav-item nav-link" href="aboutme.html">About Me</a>
+        <a class="nav-item nav-link" href="contact.html">Contact</a>
       </div>
-    </nav>
-
-    <div id="header-box" class="text-center rounded-pill">
-      <h1>Here's My Work</h1>
     </div>
-    <div class="container add-margin">
+  </nav>
+  <!-- end navbar -->
+
+  <!-- page heading with picture of me in the background-->
+  <div id="header-box" class="text-center rounded-pill" aria-label="picture of Alisa Poon">
+    <h1>Here's My Work</h1>
+  </div>
+
+  <!-- start container containing the carousel -->
+  <div class="container add-margin">
+    <!-- start row -->
+    <div class="row">
+      <div class="col-1"></div>
+
+      <!-- carousel left arrow -->
+      <div class="col-1">
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <p><i class="fas fa-angle-double-left"></i></p>
+        </a>
+      </div>
+
+      <!-- start carousel content (between the arrows) -->
+      <div id="myCarousel" class="col-8 carousel slide" data-ride="carousel" data-interval="false">
+        <!-- carousel indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ul>
+        <!-- portfolio items -->
+        <div class="carousel-inner">
+          <!-- portfolio item 1 -->
+          <div class="carousel-item col-md-12 row active">
+            <div class="carousel-text col-md-6">
+              <h2>This is the first html website I have ever made.</h2>
+              <p>
+                In this assignment, I created a web page for one of my
+                favorite bands, Kero Kero Bonito.
+              </p>
+            </div>
+            <a href="https://a-li-sa.github.io/my-first-html/fanpage.html" target="_blank"><img
+                class="img-fluid rounded" src="https://i.imgur.com/WyRVHMc.jpg" alt="first html" /></a>
+          </div>
+          <!-- portfolio item 2 -->
+          <div class="carousel-item col-md-12">
+            <div class="carousel-text col-md-6">
+              <h2>
+                This is my first experience with JavaScript.
+              </h2>
+              <p>
+                In this button-clicking activity, the box transforms according
+                to its respective buttons.
+              </p>
+            </div>
+            <a href="https://a-li-sa.github.io/watch-that-box/" target="_blank"><img class="img-fluid rounded"
+                src="https://i.imgur.com/IbVdlNe.jpg" alt="watch that box" /></a>
+          </div>
+          <!-- portfolio item 3 -->
+          <div class="carousel-item col-md-12">
+            <div class="carousel-text col-md-6">
+              <h2>
+                This is another website where I used HTML and CSS.
+              </h2>
+              <p>
+                I created a webpage about a wonderful aquatic species, the
+                ocean sunfish.
+              </p>
+            </div>
+            <a href="https://a-li-sa.github.io/github-pages-project/" target="_blank"><img class="img-fluid rounded"
+                src="https://i.imgur.com/2ISN0Ht.jpg" alt="mola mola" /></a>
+          </div>
+          <!-- portfolio item 4 -->
+          <div class="carousel-item col-md-12">
+            <div class="carousel-text col-md-6">
+              <h2>
+                This is the first portfolio I made with Bootstrap.
+              </h2>
+              <p>
+                This website features a sticky header, carousel, fixed footer,
+                and working links.
+              </p>
+            </div>
+            <a href="https://a-li-sa.github.io/responsive-portfolio/index.html" target="_blank"><img
+                class="img-fluid rounded" src="https://i.imgur.com/jUVqxyd.jpg" alt="mola mola" /></a>
+          </div>
+          <!-- last portforlio item ends here -->
+        </div>
+        <!-- end portfolio items -->
+      </div>
+      <!-- end carousel content (between the arrows) -->
+
+      <!-- carousel right arrow -->
+      <div class="col-1">
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <p><i class="fas fa-angle-double-right"></i></p>
+        </a>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+
+  <!-- start footer with social media links-->
+  <footer class="socials">
+    <div class="container">
       <div class="row">
-        <div class="col-1"></div>
-        <div class="col-1">
-          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-            <p><i class="fas fa-angle-double-left"></i></p>
-          </a>
+        <!-- link to Alisa's Linkedin -->
+        <div class="col-4">
+          <p>
+            <a href="https://www.linkedin.com/in/alisa-poon/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </p>
         </div>
-        <div
-          id="myCarousel"
-          class="col-8 carousel slide"
-          data-ride="carousel"
-          data-interval="false"
-        >
-          <ul class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-          </ul>
-          <div class="carousel-inner">
-            <div class="carousel-item col-md-12 row active">
-              <div class="carousel-text col-md-6">
-                <h2>This is the first html website I have ever made.</h2>
-                <p>
-                  In this assignment, I created a web page for one of my
-                  favorite bands, Kero Kero Bonito.
-                </p>
-              </div>
-              <a
-                href="https://a-li-sa.github.io/my-first-html/fanpage.html"
-                target="_blank"
-                ><img
-                  class="img-fluid rounded"
-                  src="https://i.imgur.com/WyRVHMc.jpg"
-                  alt="first html"
-              /></a>
-            </div>
-            <div class="carousel-item col-md-12">
-              <div class="carousel-text col-md-6">
-                <h2>
-                  This is my first experience with JavaScript.
-                </h2>
-                <p>
-                  In this button-clicking activity, the box transforms
-                  according to its respective buttons.
-                </p>
-              </div>
-              <a
-                href="https://a-li-sa.github.io/watch-that-box/"
-                target="_blank"
-                ><img
-                  class="img-fluid rounded"
-                  src="https://i.imgur.com/IbVdlNe.jpg"
-                  alt="watch that box"
-              /></a>
-            </div>
-            <div class="carousel-item col-md-12">
-              <div class="carousel-text col-md-6">
-                <h2>
-                  This is another website where I used HTML and CSS.
-                </h2>
-                <p>
-                  I created a webpage about a wonderful
-                  aquatic species, the ocean sunfish.
-                </p>
-              </div>
-              <a
-                href="https://a-li-sa.github.io/github-pages-project/"
-                target="_blank"
-                ><img
-                  class="img-fluid rounded"
-                  src="https://i.imgur.com/2ISN0Ht.jpg"
-                  alt="mola mola"
-              /></a>
-            </div>
-            <div class="carousel-item col-md-12">
-              <div class="carousel-text col-md-6">
-                <h2>
-                  This is the first portfolio I made with Bootstrap.
-                </h2>
-                <p>
-                  This website features a sticky header, carousel, fixed footer, and working links.
-                </p>
-              </div>
-              <a
-                href="https://a-li-sa.github.io/responsive-portfolio/index.html"
-                target="_blank"
-                ><img
-                  class="img-fluid rounded"
-                  src="https://i.imgur.com/jUVqxyd.jpg"
-                  alt="mola mola"
-              /></a>
-            </div>
-          </div>
+        <!-- link to Alisa's GitHub -->
+        <div class="col-4">
+          <p>
+            <a href="https://github.com/a-li-sa" target="_blank">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </p>
         </div>
-        <div class="col-1">
-          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-            <p><i class="fas fa-angle-double-right"></i></p>
-          </a>
+        <!-- link to Alisa's Medium -->
+        <div class="col-4">
+          <p>
+            <a href="https://medium.com/@a_li_sa" target="_blank">
+              <i class="fab fa-medium-m"></i>
+            </a>
+          </p>
         </div>
       </div>
     </div>
+  </footer>
+  <!-- end footer -->
 
-    <footer class="socials">
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <p>
-              <a href="https://www.linkedin.com/in/alisa-poon/" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </p>
-          </div>
-          <div class="col-4">
-            <p>
-              <a href="https://github.com/a-li-sa" target="_blank">
-                <i class="fab fa-github-alt"></i>
-              </a>
-            </p>
-          </div>
-          <div class="col-4">
-            <p>
-              <a href="https://medium.com/@a_li_sa" target="_blank">
-                <i class="fab fa-medium-m"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <!-- Optional JavaScript -->
+  <script>
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
 
-    <!-- Optional JavaScript -->
-    <script>
-      /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("navbar").style.top = "0";
-        } else {
-          document.getElementById("navbar").style.top = "-100px";
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    </script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
