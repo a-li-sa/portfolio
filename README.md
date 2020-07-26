@@ -82,7 +82,7 @@ Click on the arrows or the carousel indicators to view the portfolio items on th
 
 ## Credits
 
-Timeline HTML and CSS courtesy of [Bootsnipp](https://bootsnipp.com/snippets/yGbV).
+Timeline HTML and CSS courtesy of [Bootsnipp](https://bootsnipp.com/snippets/yGbV). Favicon from [favicon.io](https://favicon.io/).
 
 ## License 
 
